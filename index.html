@@ -158,6 +158,14 @@
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
   </nav>
 </div>
   <div class="links-of-author animated">
@@ -226,8 +234,18 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2023-04-01 12:58:20" itemprop="dateCreated datePublished" datetime="2023-04-01T12:58:20+08:00">2023-04-01</time>
+      <time title="创建时间：2023-04-01 12:58:20 / 修改时间：13:52:43" itemprop="dateCreated datePublished" datetime="2023-04-01T12:58:20+08:00">2023-04-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%B5%E5%AD%90/" itemprop="url" rel="index"><span itemprop="name">电子</span></a>
+        </span>
     </span>
 
   
@@ -240,7 +258,28 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          
+          <h2 id="iverilog与ctags">iverilog与ctags：</h2>
+<p>下载最新<a
+target="_blank" rel="noopener" href="https://bleyer.org/icarus/">iverilog</a>，安装时注意勾选Add
+PATH选项</p>
+<p>下载最新<a
+target="_blank" rel="noopener" href="https://github.com/universal-ctags/ctags">ctags</a>，需手动配置电脑环境变量</p>
+<h2 id="vscode部分">vscode部分</h2>
+<p>三个主要插件</p>
+<figure>
+<img data-src="https://s2.loli.net/2023/04/01/REAPQmlSZGH1xjW.png"
+alt="三个主要插件" />
+<figcaption aria-hidden="true">三个主要插件</figcaption>
+</figure>
+<h3
+id="verilog-hdlsystemverilogbluespec-systemverilog-没错这是一个插件名">Verilog-HDL/SystemVerilog/Bluespec
+SystemVerilog （没错这是一个插件名）</h3>
+<p>此插件用于调用Ctag与iverilog，提供语法支持，自动检错，智能补全，切换定义等基础功能。需要修改的设置：</p>
+<p><img data-src="https://s2.loli.net/2023/04/01/JdH5ZIi3zwLTlXA.png" /></p>
+<h3 id="verilog-hdl">Verilog HDL</h3>
+<p>此插件提供了一个快捷编译按钮</p>
+<h3 id="verilog-snippet">Verilog Snippet</h3>
+<p>此插件提供了更好的补全（但也更臃肿）</p>
 
       
     </div>
