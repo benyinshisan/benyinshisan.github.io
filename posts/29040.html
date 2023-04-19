@@ -22,17 +22,17 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"benyinshisan.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdn.staticfile.org/hexo-theme-next/8.15.0/config.min.js"></script>
 
-    <meta name="description" content="iverilog与ctags： 下载最新iverilog，安装时注意勾选Add PATH选项 下载最新ctags，需手动配置电脑环境变量 vscode部分 三个主要插件   三个主要插件  Verilog-HDL&#x2F;SystemVerilog&#x2F;Bluespec SystemVerilog （没错这是一个插件名） 此插件用于调用Ctag与iverilog，提供语法支持，自动检错">
+    <meta name="description" content="iverilog与ctags： 下载最新iverilog，安装时注意勾选Add PATH选项 下载最新ctags，安装时注意勾选Add PATH选项 vscode部分 三个主要插件   三个主要插件  Verilog-HDL&#x2F;SystemVerilog&#x2F;Bluespec SystemVerilog （没错这是一个插件名） 此插件用于调用Ctag与iverilog，提供语法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vscode配置verilog环境">
 <meta property="og:url" content="https://benyinshisan.github.io/posts/29040.html">
 <meta property="og:site_name" content="本音十三&#39;s Blog">
-<meta property="og:description" content="iverilog与ctags： 下载最新iverilog，安装时注意勾选Add PATH选项 下载最新ctags，需手动配置电脑环境变量 vscode部分 三个主要插件   三个主要插件  Verilog-HDL&#x2F;SystemVerilog&#x2F;Bluespec SystemVerilog （没错这是一个插件名） 此插件用于调用Ctag与iverilog，提供语法支持，自动检错">
+<meta property="og:description" content="iverilog与ctags： 下载最新iverilog，安装时注意勾选Add PATH选项 下载最新ctags，安装时注意勾选Add PATH选项 vscode部分 三个主要插件   三个主要插件  Verilog-HDL&#x2F;SystemVerilog&#x2F;Bluespec SystemVerilog （没错这是一个插件名） 此插件用于调用Ctag与iverilog，提供语法">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s2.loli.net/2023/04/01/REAPQmlSZGH1xjW.png">
 <meta property="og:image" content="https://s2.loli.net/2023/04/01/JdH5ZIi3zwLTlXA.png">
 <meta property="article:published_time" content="2023-04-01T04:58:20.000Z">
-<meta property="article:modified_time" content="2023-04-01T05:52:43.663Z">
+<meta property="article:modified_time" content="2023-04-01T13:13:08.795Z">
 <meta property="article:author" content="benyinshisan">
 <meta property="article:tag" content="Verilog">
 <meta name="twitter:card" content="summary">
@@ -166,7 +166,7 @@ SystemVerilog （没错这是一个插件名）</span></a></li><li class="nav-it
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -239,7 +239,7 @@ SystemVerilog （没错这是一个插件名）</span></a></li><li class="nav-it
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-04-01 12:58:20 / 修改时间：13:52:43" itemprop="dateCreated datePublished" datetime="2023-04-01T12:58:20+08:00">2023-04-01</time>
+      <time title="创建时间：2023-04-01 12:58:20 / 修改时间：21:13:08" itemprop="dateCreated datePublished" datetime="2023-04-01T12:58:20+08:00">2023-04-01</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -266,7 +266,8 @@ SystemVerilog （没错这是一个插件名）</span></a></li><li class="nav-it
 target="_blank" rel="noopener" href="https://bleyer.org/icarus/">iverilog</a>，安装时注意勾选Add
 PATH选项</p>
 <p>下载最新<a
-target="_blank" rel="noopener" href="https://github.com/universal-ctags/ctags">ctags</a>，需手动配置电脑环境变量</p>
+target="_blank" rel="noopener" href="https://github.com/universal-ctags/ctags">ctags</a>，安装时注意勾选Add
+PATH选项</p>
 <h2 id="vscode部分">vscode部分</h2>
 <p>三个主要插件</p>
 <figure>
@@ -297,6 +298,15 @@ SystemVerilog （没错这是一个插件名）</h3>
 
         
 
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/46462.html" rel="prev" title="交换网络">
+                  <i class="fa fa-chevron-left"></i> 交换网络
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
