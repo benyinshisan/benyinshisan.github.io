@@ -228,7 +228,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-04-19 22:38:20 / 修改时间：22:44:30" itemprop="dateCreated datePublished" datetime="2023-04-19T22:38:20+08:00">2023-04-19</time>
+      <time title="创建时间：2023-04-19 22:38:20 / 修改时间：22:58:07" itemprop="dateCreated datePublished" datetime="2023-04-19T22:38:20+08:00">2023-04-19</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -337,15 +337,18 @@ class="math display">\[(n-1)\times2\]</span>
 目的：在高复用度情况下，不使码速过高，易于实现高速传输。</p>
 <h3 id="dsn网络">DSN网络</h3>
 <ul class="task-list">
-<li><input type="checkbox" />待定 ### BANYAN网络</li>
+<li><input type="checkbox" />待定</li>
 </ul>
+<h3 id="banyan网络">BANYAN网络</h3>
 <p>（banyan网络类似树形结构，每一级与前面一级的关系类似于二分选择。）
 一个banyan网络是由多个电子开关构成，这种电子开关具有两种状态：平行连接和交叉连接，这样的电子开关又被称为2X2交换单元。
 <img data-src="../imgs/Drawing%202023-04-18%2022.40.24.excalidraw%201.png" />
-2X2交换单元可以构成一个4X4的二级交换网络，每增加一级可以扩大交换网络。
-#### BANYAN网络特点 1.
-按规律可以用较小的BANYAN网络构成交大的BANYAN网络。 2.
-用两组N*N的网络，加上N个2*2 交换单元，构成 2N*2N 的网络。</p>
+2X2交换单元可以构成一个4X4的二级交换网络，每增加一级可以扩大交换网络。</p>
+<h4 id="banyan网络特点">BANYAN网络特点</h4>
+<ol type="1">
+<li>按规律可以用较小的BANYAN网络构成交大的BANYAN网络。</li>
+<li>用两组N*N的网络，加上N个2*2 交换单元，构成 2N*2N 的网络。</li>
+</ol>
 <p><img data-src="../imgs/SmartSelect_20230418_223718_Edge.jpg" /></p>
 <h4 id="出入线级数交换单元数的关系">出/入线、级数、交换单元数的关系</h4>
 <p>N*N网络级数： <span class="math display">\[M=log^2N\]</span>
@@ -357,9 +360,9 @@ BANYAN网络不是CLOS网络，他不符合CLOS网络的无阻塞条件，当一
 2.
 通过增加多级交换网络的级数来消除内部阻塞。要温柔全消除内部阻塞，级数至少需要<span
 class="math display">\[2log_{2}N-1 \]</span> 3.
-增加BANYAN网络的平面数，构成多通道交换网络 4. 使用排序-BANYAN网络 ####
-排序-BANYAN网络
-只要BANYAN网络同时输入的全部数据块的出线地址单调排了，则不存在内部阻塞，因此在BANYAN网络前加入了排序网络。</p>
+增加BANYAN网络的平面数，构成多通道交换网络 4. 使用排序-BANYAN网络</p>
+<h4 id="排序-banyan网络">排序-BANYAN网络</h4>
+<p>只要BANYAN网络同时输入的全部数据块的出线地址单调排了，则不存在内部阻塞，因此在BANYAN网络前加入了排序网络。</p>
 <h5 id="排序网络">排序网络</h5>
 <p>一个N输入排序网络，也被称为N-排序器，即给定输入<span
 class="math display">\[I=\left \{ i_{0},i_{1},···,i_{N-1} \right \}
